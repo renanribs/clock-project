@@ -9,8 +9,8 @@ const setRotation = (element, rotation) => {
 const setClock = () => {
   const now = new Date();
   const seconds = now.getSeconds() / 60;
-  const minutes = now.getMinutes() / 60;
-  const hours = now.getHours() / 12;
+  const minutes = (seconds + now.getMinutes()) / 60;
+  const hours = (minutes + now.getHours()) / 12;
 
   setRotation(secondsHand, seconds);
   setRotation(minutesHand, minutes);
