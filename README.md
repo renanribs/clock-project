@@ -1,2 +1,2 @@
-# clock-project
-Clock project developed in HTML, CSS and JS
+# Clock Design
+### Clock project developed in HTML, CSS and JS
